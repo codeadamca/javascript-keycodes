@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detecting Key Press</title>
+
+    <script>
+      (function () {
+        document.addEventListener("keypress", function (event) {
+          console.log("Is Shift: " + event.shiftKey);
+          console.log("Is CTRL: " + event.ctrlKey);
+          console.log("Is Alt: " + event.altKey);
+          console.log("Key Code: " + event.keyCode);
+          console.log("Code: " + event.code);
+          console.log("Key: " + event.key);
+          console.log("---------------------");
+        });
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
